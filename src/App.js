@@ -1,13 +1,15 @@
-import './App.css';
-import LandingPage from './component/LandingPage';
-import More from './component/More';
+import './App.css'
+import Home from './component/Home';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <LandingPage />
-      <More/>
-
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

@@ -10,7 +10,7 @@ const Find = () => {
                     <div className='opefive' >
                         <span>THREE SIMPLE STEPS TO</span>
                     </div>
-                    <h4>Find the <span> One for You </span></h4>
+                    <h2>Find the <span> One for You </span></h2>
 
                     <div className='findAll' >
                         <div>
