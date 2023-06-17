@@ -1,15 +1,14 @@
 import React from 'react'
 import Footer from './Footer';
-import LandingPage from './LandingPage';
+import Navbar from './Navbar';
 import More from './More';
-// import Crousel from './Crousel';
+
 const Home = () => {
     return (
         <>
-            <LandingPage />
+            <Navbar />
             <More />
             <Footer />
-            {/* <Crousel/> */}
         </>
     )
 }

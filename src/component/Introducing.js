@@ -7,26 +7,32 @@ const Introducing = () => {
             <div className='intro' >
                 <div className='introImg' >
                     <h6>PERSONALISED MATCH-MAKING SERVICE</h6>
-                    <h3>Introducing <span>  Exclusive  </span></h3>
+                    <h3 className='my-2' >Introducing <span>  Exclusive  </span></h3>
                     <button>EXCLUSIVE</button>
                 </div>
 
                 <div className='introMeet' >
                     <div className='mgAu' >
-                        <small className='fIcons' ><HiOutlineUserGroup /> </small>
-                        <span>Meet Your Relationship Manager</span>
+                        <div className='d-flex align-items-center'>
+                            <small className='fIcons' ><HiOutlineUserGroup /> </small>
+                            <span className='mx-1' >Meet Your Relationship Manager</span>
+                        </div>
                         <p>Connect with our highly experienced advisor who manages your profile.</p>
                     </div>
 
                     <div className='mgAu' >
-                        <small className='fIcons' ><HiOutlineUserGroup /></small>
-                        <span> Communicate your preferences</span>
+                        <div className='d-flex align-items-center' >
+                            <small className='fIcons'><HiOutlineUserGroup /></small>
+                            <span className='mx-1' > Communicate your preferences</span>
+                        </div>
                         <p>Connect with our highly experienced advisor who manages your profile.</p>
                     </div>
 
                     <div className='mgAu' >
-                        <small className='fIcons' ><HiOutlineUserGroup /> </small>
-                        <span className='fw600' > Choose from handpicked profiles</span>
+                        <div className='d-flex align-items-center' >
+                            <small className='fIcons' ><HiOutlineUserGroup /> </small>
+                            <span className='fw600 mx-1' > Choose from handpicked profiles</span>
+                        </div>
                         <p>Connect with our highly experienced advisor who manages your profile.</p>
                     </div>
                 </div>

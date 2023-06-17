@@ -7,26 +7,20 @@ import Introducing from './Introducing'
 import MyApp from './MyApp'
 import About from './About'
 import Profile from './Profile'
+import Crousel from './Crousel'
 
 const More = () => {
-    const [s, sets] = useState(true);
-    const a = document.getElementById("milan-samaroh")
-    const b = document.getElementById("voice-and-video-calling")
-    const c = document.getElementById("video-profiles")
-    console.log(a, "true")
-    console.log("knkj", s, b, c)
 
-    const handledurgesh=()=>{
-       sets(false)
-    }
+    // const [first, setFirst] = useState(true);
+    // const [sec, setSec] = useState(false)
+    // const [third, setthird] = useState(false);
 
-    console.log(s)
+    // const handleChange = () => {
+    //     if (third === false) {
+    //         document.getElementById("thir").style.opacity = 1;
+    //     }
+    // }
 
-    const handledurgesh2=()=>{
-        sets(true)
-     }
-     console.log(s)
-      
     return (
         <>
             <div className='mauto mainwid'>
@@ -76,10 +70,10 @@ const More = () => {
                             </div>
                         </div>
                         <div className="FeaturesSection__Images">
-                            <div id="milan-samaroh" class={`FeaturesSection__Images__Wrapper`} onScroll={handledurgesh} >
+                            <div id="milan-samaroh" class={`FeaturesSection__Images__Wrapper`}>
                                 <img loading="lazy" src={pic1} alt="Match Hour - feature promotion mockup" class="FeaturesSection__Images__Wrapper__Image" />
                             </div>
-                            <div id="voice-and-video-calling" class="FeaturesSection__Images__Wrapper" onScroll={handledurgesh2}>
+                            <div id="voice-and-video-calling" class="FeaturesSection__Images__Wrapper">
                                 <img loading="lazy" src={pic3} alt="Voice &amp; Video Calling - feature promotion mockup" class="FeaturesSection__Images__Wrapper__Image" />
                             </div>
                             <div id="video-profiles" class="FeaturesSection__Images__Wrapper">
@@ -93,7 +87,7 @@ const More = () => {
                     <article>
                         <div class="txtc bg15 padInnerDiv">
                             <h3>
-                                <div class="f28 cabin_sem_bold"><span class="color5">Membership </span>Plans</div>
+                                <div class="f28 my-3 cabin_sem_bold"><span class="color5">Membership </span>Plans</div>
                             </h3>
                             <div class="fcolorgrey f16 cabin_reg pb40 lh24"> Upgrade your plan as per your customized requirements. With a paid membership, you can seamlessly connect with your prospects and get more responses. Here are some key benefits: </div>
 
@@ -133,6 +127,9 @@ const More = () => {
                     <div class="bg5 h232 z1"></div>
 
                     <Introducing />
+                    <div className='crousel' >
+                        <Crousel />
+                    </div>
                     <MyApp />
                     <Profile />
                     <About />
